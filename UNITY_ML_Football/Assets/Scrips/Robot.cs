@@ -35,10 +35,10 @@ public class Robot :Agent
 
 
         //給予機器人跟足球新的隨機座標
-        Vector3 posRobot = new Vector3(Random.Range(-2f, 2f), 0.1f,Random.Range(-2f,0f));
+        Vector3 posRobot = new Vector3(Random.Range(-1f, 1f), 0.1f,Random.Range(-1f,0f));
         transform.position = posRobot;//指定機器人座標
 
-        Vector3 posBall = new Vector3(Random.Range(-2f, 2f), 0.1f, Random.Range(1f, 2f));
+        Vector3 posBall = new Vector3(Random.Range(-0.5f, 0.5f), 0.1f, Random.Range(1f, 1.5f));
         rigBall.position = posBall;//球的座標變成算出來的隨機座標
 
         BALL.complete = false; //尚未成功
